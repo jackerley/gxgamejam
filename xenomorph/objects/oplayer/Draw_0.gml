@@ -7,7 +7,8 @@
 
 
 
+draw_self();
 
-
+draw_text(x,y,string(player_id+1));
 
 
