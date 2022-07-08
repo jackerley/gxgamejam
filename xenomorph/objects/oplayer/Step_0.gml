@@ -7,7 +7,7 @@ switch(global.controller.gamestate)
 	case eGameState.StartLine:
 	{
 		x=284-sprite_width/2;
-		y = 100+ player_id;
+		y = 100+ player_id*100;
 		
 	}
 	break;
@@ -57,7 +57,18 @@ switch(global.controller.gamestate)
 		{
 			ChangeState(eGameState.PostGame);
 		}
+		
+		if(x<sprite_width/2)
+			x= sprite_width/2;
+			
+		if(x>room_width-sprite_width/2)
+			x = room_width-sprite_width/2;
+			
+		if(y<sprite_height/2)
+			y= sprite_height/2;
 
+		if(y>room_height -sprite_height/2)
+			y= room_height- sprite_height/2;
 	}
 	break;
 	

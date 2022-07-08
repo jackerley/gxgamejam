@@ -16,6 +16,12 @@ function ChangeState(newstate){
 					instance_destroy();
 			}
 			break;
+			case eGameState.PostGame:
+			{
+				with(oRestartGame)
+					instance_destroy();
+			}
+			break;
 		}
 	
 		switch(newstate)
@@ -24,7 +30,7 @@ function ChangeState(newstate){
 			
 			case eGameState.WaitingPlayers:
 			{
-				instance_create_layer(320,room_height/2,"Instances",oStartGame);
+				instance_create_layer(320,room_height/2,"UILayer",oStartGame);
 			}
 			break;
 			case eGameState.StartLine:
@@ -39,7 +45,7 @@ function ChangeState(newstate){
 			break;
 			case eGameState.PostGame:
 			{
-				instance_create_layer(0,0,"Instances",oRestartGame);
+				instance_create_layer(0,0,"UILayer",oRestartGame);
 			}
 			break;
 		}
