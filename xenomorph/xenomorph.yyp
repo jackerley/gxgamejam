@@ -5,7 +5,6 @@
     {"id":{"name":"sprEnvironment_Tree_Palm","path":"sprites/sprEnvironment_Tree_Palm/sprEnvironment_Tree_Palm.yy",},"order":4,},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},"order":1,},
     {"id":{"name":"spr_car_endurance_blue","path":"sprites/spr_car_endurance_blue/spr_car_endurance_blue.yy",},"order":0,},
-    {"id":{"name":"sprEnvironment_Bird_Fly","path":"sprites/sprEnvironment_Bird_Fly/sprEnvironment_Bird_Fly.yy",},"order":3,},
     {"id":{"name":"oRestartGame","path":"objects/oRestartGame/oRestartGame.yy",},"order":4,},
     {"id":{"name":"Sprite6","path":"sprites/Sprite6/Sprite6.yy",},"order":5,},
     {"id":{"name":"oPuddle","path":"objects/oPuddle/oPuddle.yy",},"order":3,},
