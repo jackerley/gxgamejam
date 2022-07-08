@@ -38,20 +38,23 @@ switch(global.controller.gamestate)
 
 		if (_input.left)
 		{
-		        x -= 5;
+		        x -= xspeed;
 		}
 		if (_input.right)
 		{
-		        x += 5;
+		        x += xspeed;
 		}
 		if (_input.down)
 		{
-		        y += 5;
+		        y += yspeed;
 		}
 		if (_input.up)
 		{
-		        y -= 5;
+		        y -= yspeed;
 		}
+
+		xspeed = lerp(xspeed,5,0.1);
+		yspeed = lerp(yspeed,5,0.1);
 
 		if(x>3580 +sprite_width/2)
 		{
