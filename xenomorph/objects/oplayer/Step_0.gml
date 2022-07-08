@@ -69,6 +69,20 @@ switch(global.controller.gamestate)
 //		yspeed = lerp(yspeed,5,0.1);
 
 
+		var lensq = velx*velx+vely*vely;
+		
+		if(lensq>0.5)
+		{
+			var len = sqrt(lensq);
+			var vy = vely/len;
+			var vx = velx/len;
+		
+			var targimage_angle = -(90+radtodeg(arctan2(vy,vx)));
+	
+			
+	
+			image_angle = image_angle+(targimage_angle-image_angle)*0.2;
+		}
 
 
 
