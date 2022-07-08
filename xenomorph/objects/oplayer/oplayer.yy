@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite1",
-    "path": "sprites/Sprite1/Sprite1.yy",
+    "name": "spr_car_highspec_blue",
+    "path": "sprites/spr_car_highspec_blue/spr_car_highspec_blue.yy",
   },
   "solid": false,
   "visible": true,
