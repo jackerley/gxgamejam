@@ -1,0 +1,17 @@
+flagwaver.png
+size:225,61
+filter:Linear,Linear
+pma:true
+scale:0.5
+dude1_hand
+bounds:201,37,22,22
+dude4_head
+bounds:145,4,55,54
+rotate:90
+flag_checkered
+bounds:2,2,57,70
+offsets:7,6,68,82
+rotate:90
+flagdude_body
+bounds:74,9,69,50
+offsets:0,0,69,51
