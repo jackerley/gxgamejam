@@ -1,15 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-y=player_id*50;
 
 
-x=50;
-
-xspeed = 5;
-yspeed = 5;
-
-
+xspeed = lerp(xspeed,15,0.5);
+yspeed = lerp(yspeed,15,0.5);
 
 
 
