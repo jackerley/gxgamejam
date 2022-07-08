@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprEnvironment_Grass1",
-    "path": "sprites/sprEnvironment_Grass1/sprEnvironment_Grass1.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
