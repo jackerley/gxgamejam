@@ -39,6 +39,13 @@ function ChangeState(newstate){
 				raceclock =0;
 				var cam = view_get_camera(0);
 				camera_set_view_pos(cam,0,0);
+				
+				with(oPlayer)
+				{
+					image_angle = -90;
+					velx=0;
+					vely=0;
+				}
 
 
 			}
