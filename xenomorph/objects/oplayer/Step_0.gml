@@ -34,27 +34,43 @@ switch(global.controller.gamestate)
 			//show_debug_message("done setting follow for camera");
 		}
 		
+		velx*=0.89;
+		vely*=0.89;
+		
 		var _input = rollback_get_input();
+
+		var padx=0, pady=0;
+		
 
 		if (_input.left)
 		{
-		        x -= xspeed;
+		        padx = -1;
 		}
 		if (_input.right)
 		{
-		        x += xspeed;
+		        padx = 1;
 		}
 		if (_input.down)
 		{
-		        y += yspeed;
+		        pady = 1;
 		}
 		if (_input.up)
 		{
-		        y -= yspeed;
+		        pady = -1;
 		}
 
-		xspeed = lerp(xspeed,5,0.1);
-		yspeed = lerp(yspeed,5,0.1);
+		velx += padx;
+		vely += pady;
+		
+		x+=velx;
+		y+=vely;
+
+	//	xspeed = lerp(xspeed,5,0.1);
+//		yspeed = lerp(yspeed,5,0.1);
+
+
+
+
 
 		if(x>3580 +sprite_width/2)
 		{

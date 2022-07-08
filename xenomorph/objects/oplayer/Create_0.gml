@@ -6,8 +6,8 @@ y=player_id*50;
 
 x=50;
 
-xspeed = 5;
-yspeed = 5;
+velx = 0;
+vely = 0;
 
 
 
